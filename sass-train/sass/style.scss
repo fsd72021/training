@@ -1,0 +1,10 @@
+@import "./includes/vars";
+
+body {
+    background-color: $main_color;
+    color: oldlace;
+    font-size: 50px;
+    border-radius: 20px;
+    transform: rotate(20px);
+    box-shadow: 1px 20px 5px #ddd;
+}

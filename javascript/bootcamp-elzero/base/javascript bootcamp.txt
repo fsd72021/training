@@ -1,0 +1,7 @@
+- javascript is a scripting language or programming language
+
+- websites you need to solve problems:
+leetcode | edabit
+
+- javascript implement code line by line, if we call javascript code before the element that will get an error if we not wait the window load
+- 

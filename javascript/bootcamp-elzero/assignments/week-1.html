@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment week (1)</title>
+</head>
+
+<body>
+    <h1 id="h1">This is heading</h1>
+    <script>
+        //document create element
+        document.createElement('h1')
+        document.querySelector('h1').style.color = 'blue'
+        document.querySelector('h1').style.fontSize = '50px'
+        document.querySelector('h1').style.textAlign = 'center'
+
+        //console style
+        console.log('%cThis %cis styled %ctext', 'color: red; font-weight: bold;font-size: 30px', 'color:green;font-weight: bold;font-size: 30px', 'color: blue;font-weight: bold;font-size: 30px')
+
+        //console group
+        console.group('Group 1')
+        console.log("Message one")
+        console.log("Message two")
+
+        console.group('Child Group')
+        console.log("Message one")
+        console.log("Message two")
+
+        console.group('Grand Child Group')
+        console.log("Message one")
+        console.log("Message two")
+
+        console.groupEnd()
+        console.groupEnd()
+        console.groupEnd()
+
+        console.group('Group 2')
+        console.log("Message one")
+        console.log("Message two")
+
+        //console table
+        console.table(['Taha', 'Name', 'Another name'])
+
+
+        //cancel code by put it in function
+        function test() {
+            console.log("Iam In Console")
+            document.write("Iam In Page")
+        }
+
+        //cancel code by comment it
+        /*
+        console.log("Iam In Console");
+        document.write("Iam In Page");
+        */
+
+        //console.log("Iam In Console");
+        //document.write("Iam In Page");
+    </script>
+</body>
+
+</html>

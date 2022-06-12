@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment week (2)</title>
+</head>
+
+<body>
+    <div id="elzero">object</div>
+    <script>
+        //assignment 1
+        let numberOne = 10;
+        let numberTwo = 20;
+
+        //ouput
+        console.log(numberOne + '' + numberTwo);            // Normal Concatenate => 1020
+        console.log('--------------------------------');
+        console.log(typeof (numberOne + '' + numberTwo));   // Normal Concatenate => String
+        console.log('--------------------------------');
+        console.log(typeof (`${numberOne}${numberTwo}`));   // Template Literals Way => 1020
+        console.log('--------------------------------');
+        console.log("Add Code Here");                       // Template Literals Way => String
+        console.log('--------------------------------');
+
+        /*
+        Normal Concatenate
+        20
+        10
+        */
+        console.log(numberOne + '\n' + numberTwo);
+
+        console.log('--------------------------------');
+
+        /*
+        Template Literals Way
+        20
+        10
+        */
+        console.log(`${numberOne}
+${numberTwo}`);
+
+        console.log('--------------------------------');
+
+        //assignment 2
+        console.log(elzero.innerHTML); // object
+        console.log(typeof elzero); // object
+
+        console.log('--------------------------------');
+        
+        //assignment 3
+        console.log("\`I'm In \n\\\\ \nLove \\\\ \"\"\" \'\'\' \n++ With ++ \n\\\"\"\"\\\"\"\" \n\"\"JavaScript\"\"\`\`");
+        
+        // `I'm In
+        // \\
+        // Love \\ """ '''
+        // ++ With ++
+        // \"""\"""
+        // ""JavaScript""``
+        
+        console.log('--------------------------------');
+
+        //assignment 4
+        let a = 21;
+        let b = 20;
+
+        console.log('_' + (a.toString() + '_' + b.toString() ).repeat(4) + '_'); // _21_2021_2021_2021_20_
+    </script>
+</body>
+
+</html>

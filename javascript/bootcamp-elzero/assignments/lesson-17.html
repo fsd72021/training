@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment lesson (17)</title>
+</head>
+
+<body>
+    <script>
+        //create variables
+        let cardTitle = document.createElement('h3'),
+            cardDescription = document.createElement('p'),
+            cardDate = document.createElement('span');
+
+        //append content to elements of div card
+        cardTitle.innerText = 'This is title'
+        cardDescription.innerText = 'This is description'
+        cardDate.innerText = '9/6/2022'
+
+        //create div card
+        let cardBox = document.createElement('div')
+        cardBox.classList.add('card') //add class card to div
+
+        //append elements to card div
+        cardBox.appendChild(cardTitle)
+        cardBox.appendChild(cardDescription)
+        cardBox.appendChild(cardDate)
+
+        //append card to body
+        document.body.appendChild(cardBox)
+
+
+
+        //another way to solve challenge
+        let cardTitle2 = 'This is title',
+            cardDescription2 = 'This is description',
+            cardDate2 = '9/6/2022';
+
+        let cardBox2 = `<div class="card"><h3>${cardTitle2}</h3><p>${cardDescription2}</p><span>${cardDate2}</span></div>`.repeat(4)
+        document.write('--------------------------------')
+        document.write(cardBox2)
+    </script>
+</body>
+
+</html>
