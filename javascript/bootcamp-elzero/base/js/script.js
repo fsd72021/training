@@ -8,19 +8,19 @@
   - javascript is loosely typed not strongly typed (not necessary to tell type of var)
   --------------------------------------------
   var
-  - declare                       (no errors)
+  - redeclare                     (no errors)
   - access before declare         (undefined not error)
   - variable scope drama          (added to window)
   - block or function scope       (global)
   let
-  - declare                       (error => has already been declared)
+  - redeclare                     (error => has already been declared)
   - access before declare         ()
-  - variable scope drama          (added to window)
+  - variable scope drama          (not added to window)
   - block or function scope       ()
   const
   - declare                       (error => has already been declared)
   - access before declare         ()
-  - variable scope drama          (added to window)    
+  - variable scope drama          (not added to window)    
   - block or function scope       ()
   --------------------------------------------
   arithmetic operators
@@ -601,15 +601,43 @@ console.log(calcNumbers(20, 50, 40, 30));
 
 console.log('---------------------------------------------')
 
+//Anonymous Function (without name)
+let calculator = function (num1, num2) {
+  return num1 * num2
+}
+console.log(calculator(20, 20));
 
+setTimeout(function () {
+  console.log('Hello Taha, this is anonymous function');
+}, 2000)
 
 console.log('---------------------------------------------')
 
+//Return Nested Function
+function sayMessage(firstName, lastName) {
+  let message = 'Hello'
 
+  function concatMessage() {
+    function concatName() {
+      return `${firstName} ${lastName}`
+    }
+    return `${message} ${concatName()}`
+  }
+  return concatMessage()
+}
+console.log(sayMessage('Taha', 'Alraihany'));
 
 console.log('---------------------------------------------')
 
+//Arrow Function
+let arrowFunction1 = () => {
+  'This is name'
+}
+let arrowFunction2 = () => 'This is name'
+let arrowFunction3 = _ => 'This is name'
+let arrowFunction4 = (name, age) => `Name is: ${name} and age is: ${age}`
 
+console.log(arrowFunction4('Taha', 26));
 
 console.log('---------------------------------------------')
 

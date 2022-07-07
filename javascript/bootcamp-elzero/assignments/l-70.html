@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function Challenge, lesson (70)</title>
+</head>
+
+<body>
+    <script>
+        function showDetails(...details) {
+            let name,
+                age,
+                satatus;
+                
+            for (let i = 0; i < details.length; i++) {
+                typeof details[i] === 'string' ? name = details[i] : typeof details[i] === 'number' ? age = details[i] : satatus = details[i]
+            }
+
+            return console.log(`Hello, ${name} your age is: ${age} and are ${satatus === true ? 'available' : 'not available'} for hiring`)
+        }
+
+        showDetails('Taha', 'Mohamed', 'Mahmoud', 'Khaled')
+        showDetails(true, 26, 'Taha')
+        showDetails(26, 'Taha', false)
+        showDetails(false, 26, 'Taha')
+    </script>
+</body>
+
+</html>
