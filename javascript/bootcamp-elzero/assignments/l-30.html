@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson (30)</title>
+</head>
+
+<body>
+    <script>
+        let text = 'Elzero Web School'
+        
+        //return Zero with slice, charAt only
+        console.log(text.slice(2, 6).charAt(0).toUpperCase() + text.slice(3, 6)); //Zero
+
+        //return H 8 times
+        console.log(text.charAt(text.length - 4).repeat(8).toUpperCase()); //HHHHHHHH
+
+        //return array [Elzero]
+        console.log(text.split(' ', 1)); //[Elzero]
+
+        //return Elzero School with substr and template literals
+        console.log(`${text.substr(0, 6)} ${text.substr(11)}`); //Elzero School
+
+        //return full text with uppercase first and last letter
+        console.log(`${text.charAt(0).toLowerCase()}${text.slice(1, text.length - 1).toUpperCase()}${text.charAt(text.length - 1).toLowerCase()}`);
+    </script>
+</body>
+
+</html>

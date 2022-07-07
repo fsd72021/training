@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson (47)</title>
+</head>
+
+<body>
+    <script>
+        let zero = 0
+        let counter = 3
+        let my = ['Ahmed', 'Mazero', 'Elham', 'Osama', 'Gamal', 'Ameer']
+
+        // my.pop()
+        // let newMy = my
+        // newMy.pop()
+        // newMy.reverse()
+
+        my.splice(my.length - (counter - ++zero))
+        my.reverse()
+
+        // return ['Osama', 'Elham', 'Mazero', 'Ahmed']
+        console.log(my)
+
+
+        // return ['Elham', 'Mazero']
+        console.log(my.slice(zero, counter)) // ['Elham', 'Mazero']
+        
+        // return 'Elzero' El of 'elham' and zero of 'Mazero'
+        console.log(my[zero].substring(--zero, counter - ++zero) + my[counter - zero].substring(counter - zero)) // 'Elzero'
+
+        //return 'rO'
+        console.log(my[my.indexOf('Mazero')][counter + zero] + my[my.indexOf('Mazero')][counter + ++zero].toUpperCase()); // 'rO'
+    </script>
+</body>
+
+</html>

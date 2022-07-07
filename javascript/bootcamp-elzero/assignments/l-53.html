@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson (53)</title>
+</head>
+
+<body>
+    <script>
+        let products = ['pen', 'bag', 'mouse']
+        let colors = ['red', 'green', 'blue']
+        let showCount = 2
+
+        document.write(`<h2>There is ${showCount} products</h2>`)
+
+        for (let i = 0; i < showCount && i < products.length; i++) {
+            document.write(`<h3>[${i + 1}]${products[i]}</h3>`)
+
+            for(let j = 0; j < colors.length; j++) {
+                document.write(`<p>${colors[j]}</p>`)
+            }
+
+            document.write(`${colors.join(' | ')}`)
+        }
+    </script>
+</body>
+
+</html>

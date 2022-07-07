@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson (37)</title>
+</head>
+
+<body>
+    <script>
+        let a = 10
+        
+        //ternary operator if condition
+        a < 10 ? console.log(10) : a >= 10 && a <= 40 ? console.log('10 to 40') : a > 40 ? console.log('> 40') : console.log('unknown')
+        
+        let st = 'Elzero Web School'
+        
+        //return good
+        if ((st.length * 2).toString() === '34') {
+            console.log('Good');
+        }
+        
+        //return good
+        if (st.charAt(st.toLowerCase().indexOf('w')).toLowerCase() === 'w') {
+            console.log('Good');
+        }
+
+        //return good
+        if (st !== 'string') {
+            console.log('Good');
+        }
+
+        //return good
+        if (typeof (st.length) === 'number') {
+            console.log('Good');
+        }
+
+        //return good
+        if (st.split(' ', 1).toString().repeat(2) === 'ElzeroElzero') {
+            console.log('Good');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson (26)</title>
+</head>
+
+<body>
+    <script>
+        let a = 1_00,
+            b = 2_00.5,
+            c = 1e2,
+            d = 2.4;
+        //return min number as an integer
+        console.log(parseInt(Math.min(a, b, c, d))); // 2
+
+        //use a and d to return 10000
+        console.log(Math.pow(a, parseInt(d))); // 10000
+
+        //get integer 2 from variable d in 4 ways
+        console.log(parseInt(d)); // 2
+        console.log(Math.floor(d)); // 2
+        console.log(Math.trunc(d)); // 2
+        console.log(Math.round(d)); // 2
+
+        //use b and d to get the next values
+        console.log(); // 66.67 as string
+        console.log(); // 67 as a number
+    </script>
+</body>
+
+</html>
